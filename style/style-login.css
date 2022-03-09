@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 main{
-    margin-top:10%;
+    margin-top: 150px;
 }
 #titulo{
     margin-left: 24.4%;
@@ -61,7 +61,7 @@ p{
 }
 #nome{
     width: 40%;
-    height: 20px;
+    height: 40px;
     display: block;
     border-radius: 5px ;
     margin: auto;
@@ -73,7 +73,7 @@ p{
 }
 #senha{
     width: 40%;
-    height: 20px;
+    height: 40px;
     display: block;
     border-radius: 5px ;
     margin-top: 10px;
