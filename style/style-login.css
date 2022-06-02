@@ -1,126 +1,76 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-family: monospace;
-    background-color: black;
+}
+body{
+    background: radial-gradient(rgb(28, 28, 28),rgb(0, 0, 0));
+    height: 100vh;
     color: whitesmoke;
+    display: grid;
+    grid-template-areas: "header header header"
+    "faixa1 main faixa2"
+    "footer footer footer";
+    grid-template-rows: 30vh auto 55vh;
+    grid-template-columns: 20vw auto 20vw;
+    overflow: hidden;
+    font-family: "thundercats";
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color:whitesmoke;
 }
 main{
-    margin-top: 150px;
+    height: calc(auto + 10vh);
+    grid-area: main;
+    border: red solid 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
-#titulo{
-    margin-left: 24.4%;
-    margin-right: auto;
-    margin-top: 4%;
-    margin-bottom: -10px;
-    width: 120px;
-    background-color: red;
-    border: 5px red solid;
-    border-radius: 5px ;
-
+form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 30px;
 }
-#login{
-    width: 50vw;
-    border: 10px red solid;
-    border-radius: 5px ;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0%;
-    background-color: black;
-    font-size: 18px;
-}
-#psenha{
-    text-align: center;
-    width: 160px;
-    display: block;
-    border-radius: 5px ;
-    margin: auto;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-bottom: -5px;
-    background-color: rgb(0, 0, 0);
-    border: 5px rgb(0, 0, 0) solid;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-p{
-    text-align: center;
-    width: 160px;
-    display: block;
-    border-radius: 5px ;
-    margin: auto;
-    margin-top: 10%;
-    margin-left: auto;
-    /* margin-bottom: -5px; */
-    background-color: rgb(0, 0, 0);
-    border: 5px rgb(0, 0, 0) solid;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-#nome{
-    width: 40%;
-    height: 40px;
-    display: block;
-    border-radius: 5px ;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: rgb(0, 0, 0);
-    border: 3px rgb(255, 255, 255) solid;
+.input{
     color: whitesmoke;
-    font-size: 18px;
-}
-#senha{
-    width: 40%;
-    height: 40px;
-    display: block;
-    border-radius: 5px ;
-    margin-top: 10px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: rgb(0, 0, 0);
-    border: 3px rgb(255, 255, 255) solid;
-    color: whitesmoke;
-    font-size: 18px;
-}
-a{
-    text-decoration: none;
-    font-size: 18px;
-}
-input{
-    text-decoration: none;
-    font-size: 18px;
-}
-.enviar{
     height: 35px;
-    display: block;
-    border-radius: 5px ;
-    margin: auto;
-    margin-bottom: 3.1%;
-    padding: 0px;
-    background-color: rgb(0, 0, 0);
-    border: 5px rgb(255, 0, 0) solid;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    border-bottom:white solid 2px;
+    transition: 0.5s;
 }
-.enviar:hover{
+.input:hover{
+    border-bottom:red solid 2px ;
+}
+#enviar{
+    background: none;
+    color: whitesmoke;
+    border: none;
+    border-bottom:rgb(255, 0, 0) solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 30px;
+    transition: 0.5s ;
+}
+#enviar:hover{
     background-color: red;
     cursor: pointer;
-    font-size: 18px;
-    padding: 0px;
+    
 }
-#faixa{
-    width: 24.5%;
-    height: 20px;
-    background-color: red;
-    position:absolute;
-    margin-top:-150px;
-}
-#faixa2{
-    margin-left:75.5%;
-    width: 25%;
-    height: 20px;
-    background-color: red;
-    position:absolute;
-    margin-top:-150px;
+footer{
+    grid-area: footer;
 }
