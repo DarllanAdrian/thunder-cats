@@ -70,7 +70,7 @@ iframe{
 }
 @media screen and (max-width: 700px) {
     iframe{
-        width: 65vw;
+        width: 75vw;
         height: 40vh;
     }
 }
