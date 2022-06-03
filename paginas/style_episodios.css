@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: radial-gradient(rgb(28, 28, 28),rgb(0, 0, 0));
+    color: whitesmoke;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header "
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: 25vh auto 10vh;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 660px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        margin-top: 15px;
+    }
+}
+#logo{
+    width: 330px;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: "thundercats";
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-bottom: solid red 2px;
+    padding: 5px;
+    transition: 0.5s;
+}
+a:hover{
+    background-color: red;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+    margin-top: 25px;
+}
+footer{
+    background: radial-gradient(rgb(28, 28, 28),rgb(0, 0, 0));
+    margin-top: 20px;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

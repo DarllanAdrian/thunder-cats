@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: "thundercats";
+            src: url("fonts/ThunderCats-Ho!.ttf") format("truetype");
+        }
+    </style>
     <link rel="stylesheet" href="style/style-login.css">
     <script src="script.js"></script>
     <title>LOGIN</title>
 </head>
 <body>
+    <header> <h1 id="titulo">LOG IN - THUNDER CATS</h1></header>
+    <!-- <div id="faixa1">a</div> -->
     <main>
-        <h1 id="titulo">LOG IN</h1>
-        <div id="login">
         <form>
-            <p>Nome de usuário:</p>
-            <input type="text"  id="nome" placeholder="Nome">
-            <p id="psenha">Senha:</p>
-            <input type="password" name="senha" id="senha" placeholder="Senha">
-            <input type="submit" class="enviar" onclick="logar(); return false">
+            <label for="nome">Nome de usuário:</label>
+            <input type="text"  id="nome" placeholder="Nome" class="input">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" class="input">
+            <input type="submit" value ='Entrar' id="enviar" class="enviar" onclick="logar(); return false">
         </form>
         </div>
-        <div id="faixa"></div>
-        <div id="faixa2"></div>
-    </main>
+    <!-- <div id="faixa2">a</div> -->
+    <footer></footer>
 </body>
 </html>
