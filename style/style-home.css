@@ -49,6 +49,7 @@ a{
 }
 a:hover{
     background-color: red;
+    cursor: pointer;
 }
 main{
     /* background-color: rgb(91, 0, 0); */
