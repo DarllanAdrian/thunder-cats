@@ -32,9 +32,15 @@ header{
         flex-direction: column;
         padding: 5px 0px;
     }
-    a{
+    a{ 
         flex-direction: row;
     }
+}
+img{
+    padding-top: 15px;
+}
+h1{
+    text-align: center;
 }
 a{
     margin-right: 25px;
@@ -58,9 +64,15 @@ main{
     padding: 20px 30px;
 }
 iframe{
-    margin:20px;
-    width: 65vw;
+    margin:20px 0px;
+    width: 45vw;
     height: 40vh;
+}
+@media screen and (max-width: 700px) {
+    iframe{
+        width: 65vw;
+        height: 40vh;
+    }
 }
 footer{
     background: radial-gradient(rgb(28, 28, 28),rgb(0, 0, 0));
