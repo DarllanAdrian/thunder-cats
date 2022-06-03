@@ -68,6 +68,11 @@ iframe{
     width: 45vw;
     height: 40vh;
 }
+#prox_ante{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width: 700px) {
     iframe{
         width: 75vw;
