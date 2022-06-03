@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: "thundercats";
+    src: url("fonts/ThunderCats-Ho!.ttf") format("truetype");
+}*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: radial-gradient(rgb(28, 28, 28),rgb(0, 0, 0));
+    color: whitesmoke;
+    height: 100vh;
+}
